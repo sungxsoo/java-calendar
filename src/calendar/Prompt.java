@@ -11,9 +11,8 @@ public class Prompt {
 		Scanner sc = new Scanner(System.in);
 		Calendar cal = new Calendar();  
 		int month = 0;
-		int year;
 		
-		
+
 		while(true) {
 			System.out.println("달을 입력하세요.");
 			
@@ -27,10 +26,12 @@ public class Prompt {
 			
 			cal.printCalendar(2017, month);
 		}
+		sc.close();
 	}
 	
 	public static void main(String[] args) {
 		Prompt prompt = new Prompt();
 		prompt.runPrompt();
 	}
+	
 }
